@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Maker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pizza Maker Spel</h1>  
+    <div id="pizza-container">
+        <img src="afbeeldingen/pizza-bodem.png" alt="Pizza Bodem" id="pizza-bodem">
+    </div>
+    <section id="bediening">
+        <button class="topping-knop" data-topping="tomatensaus">
+            <img src="afbeeldingen/tomatensaus.png" alt="Tomatensaus">
+            <p>Tomatensaus</p>
+        </button>
+        <button class="topping-knop" data-topping="mozzarella">
+            <img src="afbeeldingen/mozzarella.png" alt="Mozzarella">
+            <p>Mozzarella</p>
+        </button>
+        <button class="topping-knop" data-topping="verse-basilicum">
+            <img src="afbeeldingen/verse-basilicum.png" alt="Verse Basilicum">
+            <p>Verse Basilicum</p>
+        </button>
+        <button class="topping-knop" data-topping="knoflook">
+            <img src="afbeeldingen/knoflook.png" alt="Knoflook">
+            <p>Knoflook</p>
+        </button>
+        <button class="topping-knop" data-topping="pepperoni">
+            <img src="afbeeldingen/pepperoni.png" alt="Pepperoni">
+            <p>Pepperoni</p>
+        </button>
+        <button class="topping-knop" data-topping="champignons">
+            <img src="afbeeldingen/champignons.png" alt="Champignons">
+            <p>Champignons</p>
+        </button>
+        <button class="topping-knop" data-topping="paprika">
+            <img src="afbeeldingen/paprika.png" alt="Paprika">
+            <p>Paprika</p>
+        </button>
+        <button class="topping-knop" data-topping="ham">
+            <img src="afbeeldingen/ham.png" alt="Ham">
+            <p>Ham</p>
+        </button>
+        <button class="topping-knop" data-topping="olijven">
+            <img src="afbeeldingen/olijven.png" alt="Olijven">
+            <p>Olijven</p>
+        </button>
+        <button class="topping-knop" data-topping="olijfolie">
+            <img src="afbeeldingen/olijfolie.png" alt="Olijfolie">
+            <p>Olijfolie</p>
+        </button>
+    </section>
+    <button id="bak-knop">Pizza Bakken</button>
+    <button id="reset-knop" style="display: none;">Opnieuw Beginnen</button>
+    <section id="score">
+        <h2>Jouw Score:</h2>
+        <img class="score-afbeelding" src="afbeeldingen/geen-ster.png" alt="Geen sterren">
+        <img class="score-afbeelding" src="afbeeldingen/1-ster.png" alt="1 ster">
+        <img class="score-afbeelding" src="afbeeldingen/2-sterren.png" alt="2 sterren">
+        <img class="score-afbeelding" src="afbeeldingen/3-sterren.png" alt="3 sterren">
+        <p id="score-tekst"></p>
+    </section>
+    <img src="afbeeldingen/kookboek.png" alt="Kookboek" id="kookboek">
+    <div id="popup" style="display: none;">
+        <div id="popup-content">
+            <span id="close-popup">&times;</span>
+            <h2>Pizza Ingrediënten</h2>
+            <ul id="ingredients-list"></ul>
+        </div>
+        <audio id="topping-sound" src="geluiden/topping-geluid.mp3"></audio>
+        <audio id="baking-sound" src="geluiden/bak-geluid.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
